@@ -46,6 +46,7 @@
     color:var(--court-deep);
   }
   .tabular{font-variant-numeric:tabular-nums;}
+
   /* ---------- masthead / hero ---------- */
   .masthead{
     background:
@@ -91,7 +92,7 @@
   .btn-primary:hover{filter:brightness(1.05);}
   .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5);}
   .btn-ghost:hover{background:rgba(255,255,255,.1);}
-
+  
   /* ---------- nav pills ---------- */
   .subnav{
     position:sticky;top:0;z-index:20;
@@ -115,6 +116,7 @@
     white-space:nowrap;
   }
   .subnav a.is-cta{color:var(--court-deep);border-color:var(--court);font-weight:700;}
+
   /* ---------- sections ---------- */
   section{padding:42px 0;border-bottom:1px solid var(--line);}
   section:last-of-type{border-bottom:none;}
@@ -177,6 +179,7 @@
   }
   .highlight-card h3{font-size:15.5px;margin-bottom:6px;}
   .highlight-card p{font-size:13.5px;color:var(--ink-soft);margin:0;}
+
   .access-map{
     background:var(--court-tint);
     border:1.5px dashed var(--court);
@@ -207,6 +210,8 @@
     margin-top:14px;
   }
   .note b{color:var(--ink);}
+  .note.warn{background:var(--clay-tint);color:var(--clay);border-color:transparent;}
+  .note.warn b{color:var(--clay);}
 
   .contact-card{
     background:var(--paper-raised);
@@ -231,13 +236,14 @@
     <div class="kicker">VJOP-F1 公認 &middot; 第4回</div>
     <h1>南九州ベテランオープン<br>テニス選手権</h1>
     <div class="sub">年代別シングルス・ダブルス &middot; 令和8年11月21日(土)〜23日(月・祝)</div>
-    <div class="org">主催:一般社団法人ひなたスポーツクロス &middot; 会場:都城運動公園テニスコート</div>
+    <div class="org">主催:一般社団法人ひなたスポーツクロス &middot; 会場:ダンロップテニスコート(都城運動公園)</div>
     <div class="cta-row">
       <a href="https://claude.ai/code/artifact/59a645d1-ac89-4bca-accb-897dceaf6959" class="btn btn-primary" target="_blank" rel="noopener">大会要項・お申込みはこちら</a>
       <a href="#greeting" class="btn btn-ghost">ごあいさつを読む</a>
     </div>
   </div>
 </div>
+
 <div class="page">
 
   <nav class="subnav">
@@ -272,6 +278,7 @@
       <div class="greeting-box__name name">〔お名前・肩書き〕　一般社団法人ひなたスポーツクロス</div>
     </div>
   </section>
+
   <!-- ============================================================
        ③ 大会概要
        大会の基本情報です。日程・会場等が変わった場合はここを更新してください。
@@ -283,16 +290,18 @@
       <div class="info-cell"><div class="k">大会名称</div><div class="v">第4回 南九州ベテランオープンテニス選手権</div></div>
       <div class="info-cell"><div class="k">公認</div><div class="v">ベテランJOP対象大会 グレードF1</div></div>
       <div class="info-cell"><div class="k">主催</div><div class="v">一般社団法人ひなたスポーツクロス</div></div>
-      <div class="info-cell"><div class="k">協賛</div><div class="v">サンフローラル宮崎</div></div>
       <div class="info-cell"><div class="k">共催</div><div class="v">都城市テニス協会</div></div>
+      <div class="info-cell"><div class="k">協賛</div><div class="v">サンフローラル宮崎</div></div>
       <div class="info-cell"><div class="k">後援</div><div class="v">宮崎県テニス協会</div></div>
       <div class="info-cell"><div class="k">開催日程</div><div class="v">令和8年11月21日(土)〜23日(月・祝)</div></div>
-      <div class="info-cell"><div class="k">会場</div><div class="v">都城運動公園テニスコート(砂入り人工芝16面)</div></div>
+      <div class="info-cell"><div class="k">会場</div><div class="v">ダンロップテニスコート(都城運動公園、砂入り人工芝16面)</div></div>
       <div class="info-cell"><div class="k">種目</div><div class="v">男女シングルス・ダブルス(30歳以上〜75歳以上、5歳刻み)</div></div>
       <div class="info-cell"><div class="k">申込締切</div><div class="v tabular">令和8年10月16日(金)</div></div>
     </div>
+    <div class="note warn"><b>ダブルスは2日目(11/22)からの開催です。1日目(11/21)はダブルスの試合はありません。</b></div>
     <div class="note"><b>詳しい参加資格・参加料・お申込みは</b>&nbsp;<a href="https://claude.ai/code/artifact/59a645d1-ac89-4bca-accb-897dceaf6959" target="_blank" rel="noopener">大会要項・申込フォームのページ</a>をご覧ください。</div>
   </section>
+
   <!-- ============================================================
        ④ 見どころ
        カードを増減する場合は highlight-card の &lt;div&gt; ブロックごと
@@ -318,6 +327,7 @@
       </div>
     </div>
   </section>
+
   <!-- ============================================================
        ⑤ アクセス
        地図を埋め込む場合は access-map を Google マップの
@@ -326,7 +336,7 @@
   <section id="access">
     <div class="section-head"><span class="section-num">04</span><h2>アクセス</h2></div>
     <div class="info-grid">
-      <div class="info-cell"><div class="k">会場</div><div class="v">都城運動公園テニスコート</div></div>
+      <div class="info-cell"><div class="k">会場</div><div class="v">ダンロップテニスコート(都城運動公園)</div></div>
       <div class="info-cell"><div class="k">住所</div><div class="v">〒885-0033 宮崎県都城市妻ケ丘町42街区</div></div>
       <div class="info-cell"><div class="k">電話</div><div class="v">0986-23-7502</div></div>
     </div>
@@ -334,7 +344,7 @@
       〔駐車場のご案内・最寄り駅からのアクセス・Googleマップの埋め込みなどをここに追加してください〕
     </div>
   </section>
-
+  
   <!-- ============================================================
        ⑥ 協賛
        協賛企業を増やす場合は sponsor-chip を追加してください。
@@ -346,6 +356,7 @@
     </div>
     <div class="note">〔協賛企業のロゴ画像や、その他の協賛・協力企業があれば追記してください〕</div>
   </section>
+
   <!-- ============================================================
        ⑦ お問い合わせ
   ============================================================= -->
