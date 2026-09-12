@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第4回 南九州ベテランオープンテニス選手権 | 一般社団法人ひなたスポーツクロス</title>
+<meta name="description" content="令和8年11月21日(土)〜23日(月・祝)開催。第4回 南九州ベテランオープンテニス選手権の公式ページです。主催:一般社団法人ひなたスポーツクロス">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Barlow+Condensed:wght@500;600;700&display=swap">
+<style>
+  :root{
+    --paper:#F5F6EF;
+    --paper-raised:#FFFFFF;
+    --ink:#16211B;
+    --ink-soft:#4B564D;
+    --ink-faint:#7C8880;
+    --court:#1F5C45;
+    --court-deep:#123626;
+    --court-tint:#E7EFE6;
+    --ball:#C7D92C;
+    --ball-ink:#3A4300;
+    --line:#DBE1D3;
+    --clay:#AE4230;
+    --clay-tint:#F7E7E2;
+    --shadow: 0 1px 2px rgba(20,30,20,.06), 0 8px 24px rgba(20,30,20,.06);
+    color-scheme: light;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;}
+  .page{max-width:920px;margin:0 auto;padding:0 20px 80px;}
+  h1,h2,h3{font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;text-wrap:balance;margin:0;}
+  a{color:var(--court-deep);}
+  .kicker{
+    font-family:"Barlow Condensed",sans-serif;
+    font-weight:600;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    font-size:12.5px;
+    color:var(--court-deep);
+  }
+  .tabular{font-variant-numeric:tabular-nums;}
+
+  /* ---------- masthead / hero ---------- */
+  .masthead{
+    background:
+      linear-gradient(160deg, var(--court) 0%, var(--court-deep) 100%);
+    color:#F4F8F1;
+    padding:56px 20px 44px;
+    border-radius:0 0 28px 28px;
+    text-align:center;
+  }
+  .masthead-inner{max-width:760px;margin:0 auto;}
+  .masthead .kicker{color:var(--ball);}
+  .masthead h1{
+    font-size:clamp(28px,6vw,42px);
+    font-weight:900;
+    margin-top:12px;
+    color:#fff;
+  }
+  .masthead .sub{
+    margin-top:12px;
+    font-size:16px;
+    color:#DCE9DF;
+  }
+  .masthead .org{
+    margin-top:6px;
+    font-size:13.5px;
+    color:#BFD6C7;
+  }
+  .cta-row{margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:"Zen Kaku Gothic New",sans-serif;
+    font-weight:700;
+    font-size:15.5px;
+    padding:14px 26px;
+    border-radius:11px;
+    border:1px solid transparent;
+    cursor:pointer;
+    text-decoration:none;
+    transition:transform .12s ease, filter .12s ease;
+  }
+  .btn:active{transform:translateY(1px);}
+  .btn-primary{background:var(--ball);color:var(--ball-ink);}
+  .btn-primary:hover{filter:brightness(1.05);}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5);}
+  .btn-ghost:hover{background:rgba(255,255,255,.1);}
+
+  /* ---------- nav pills ---------- */
+  .subnav{
+    position:sticky;top:0;z-index:20;
+    background:var(--paper);
+    padding:12px 0;
+    display:flex;gap:8px;overflow-x:auto;
+    border-bottom:1px solid var(--line);
+    margin:0 -20px 8px;
+    padding-left:20px;padding-right:20px;
+  }
+  .subnav::-webkit-scrollbar{display:none;}
+  .subnav a{
+    flex:0 0 auto;
+    font-size:13px;font-weight:500;
+    color:var(--ink-soft);
+    text-decoration:none;
+    padding:7px 13px;
+    border-radius:999px;
+    border:1px solid var(--line);
+    background:var(--paper-raised);
+    white-space:nowrap;
+  }
+  .subnav a.is-cta{color:var(--court-deep);border-color:var(--court);font-weight:700;}
+
+  /* ---------- sections ---------- */
+  section{padding:42px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .section-head{display:flex;align-items:baseline;gap:10px;margin-bottom:18px;}
+  .section-num{font-family:"Barlow Condensed",sans-serif;font-weight:700;color:var(--ink-faint);font-size:14px;}
+  section h2{font-size:22px;font-weight:700;}
+  section .lead{font-size:15px;color:var(--ink-soft);margin:0 0 18px;}
+
+  .photo-placeholder{
+    background:var(--court-tint);
+    border:1.5px dashed var(--court);
+    border-radius:16px;
+    padding:40px 20px;
+    text-align:center;
+    color:var(--court-deep);
+    font-size:13.5px;
+    margin-bottom:18px;
+  }
+  .photo-placeholder b{display:block;font-size:14.5px;margin-bottom:4px;}
+
+  .greeting-box{
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:28px;
+    box-shadow:var(--shadow);
+  }
+  .greeting-box .name{margin-top:16px;font-size:13.5px;color:var(--ink-faint);text-align:right;}
+
+  .info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    border-radius:14px;
+    overflow:hidden;
+  }
+  .info-cell{background:var(--paper-raised);padding:16px 18px;}
+  .info-cell .k{font-size:12px;color:var(--ink-faint);letter-spacing:.03em;}
+  .info-cell .v{font-size:15px;margin-top:4px;font-weight:500;}
+
+  .highlight-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:14px;
+  }
+  .highlight-card{
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:20px;
+  }
+  .highlight-card .num{
+    font-family:"Barlow Condensed",sans-serif;font-weight:700;
+    font-size:24px;color:var(--ball-ink);background:var(--ball);
+    width:36px;height:36px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:12px;
+  }
+  .highlight-card h3{font-size:15.5px;margin-bottom:6px;}
+  .highlight-card p{font-size:13.5px;color:var(--ink-soft);margin:0;}
+
+  .access-map{
+    background:var(--court-tint);
+    border:1.5px dashed var(--court);
+    border-radius:16px;
+    padding:32px 20px;
+    text-align:center;
+    color:var(--court-deep);
+    font-size:13.5px;
+    margin-top:16px;
+  }
+
+  .sponsor-row{
+    display:flex;flex-wrap:wrap;gap:14px;
+  }
+  .sponsor-chip{
+    background:var(--paper-raised);border:1px solid var(--line);border-radius:12px;
+    padding:16px 22px;font-size:14.5px;font-weight:600;color:var(--ink);
+  }
+
+  .note{
+    display:flex;gap:10px;
+    background:var(--court-tint);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:12px 14px;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    margin-top:14px;
+  }
+  .note b{color:var(--ink);}
+
+  .contact-card{
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:24px;
+    box-shadow:var(--shadow);
+  }
+  .contact-card .row{display:flex;gap:10px;padding:8px 0;font-size:14.5px;border-bottom:1px solid var(--line);}
+  .contact-card .row:last-child{border-bottom:none;}
+  .contact-card .row .k{width:110px;flex:0 0 auto;color:var(--ink-faint);font-size:13px;}
+
+  footer{padding:36px 0 10px;font-size:12.5px;color:var(--ink-faint);text-align:center;}
+  footer .name{font-weight:700;color:var(--ink-soft);font-size:13.5px;}
+  footer .credit{margin-top:14px;font-size:11.5px;}
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="masthead-inner">
+    <div class="kicker">VJOP-F1 公認 &middot; 第4回</div>
+    <h1>南九州ベテランオープン<br>テニス選手権</h1>
+    <div class="sub">年代別シングルス・ダブルス &middot; 令和8年11月21日(土)〜23日(月・祝)</div>
+    <div class="org">主催:一般社団法人ひなたスポーツクロス &middot; 会場:都城運動公園テニスコート</div>
+    <div class="cta-row">
+      <a href="https://claude.ai/code/artifact/59a645d1-ac89-4bca-accb-897dceaf6959" class="btn btn-primary" target="_blank" rel="noopener">大会要項・お申込みはこちら</a>
+      <a href="#greeting" class="btn btn-ghost">ごあいさつを読む</a>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <nav class="subnav">
+    <a href="#greeting">ごあいさつ</a>
+    <a href="#overview">大会概要</a>
+    <a href="#highlights">見どころ</a>
+    <a href="#access">アクセス</a>
+    <a href="#sponsors">協賛</a>
+    <a href="#contact">お問い合わせ</a>
+    <a href="https://claude.ai/code/artifact/59a645d1-ac89-4bca-accb-897dceaf6959" class="is-cta" target="_blank" rel="noopener">申込フォーム</a>
+  </nav>
+
+  <!-- ============================================================
+       ② ごあいさつ
+       下の greeting-box 内のテキストを、主催者代表のごあいさつ文に
+       差し替えてください。お名前・肩書きも greeting-box__name に。
+       写真を入れる場合は photo-placeholder を <img> に置き換えてください。
+  ============================================================= -->
+  <section id="greeting">
+    <div class="section-head"><span class="section-num">01</span><h2>ごあいさつ</h2></div>
+    <div class="photo-placeholder">
+      <b>〔代表者の写真〕</b>
+      ここに写真を入れる場合は、この枠を &lt;img src="お写真のファイル名.jpg" alt="代表挨拶"&gt; に置き換えてください
+    </div>
+    <div class="greeting-box">
+      <!-- ▼▼ ここにごあいさつ文を差し替えてください ▼▼ -->
+      <p>
+        〔主催者代表からのごあいさつ文をここに記入してください。大会への思い、
+        参加者の皆様へのメッセージなどをご自由にお書きください。〕
+      </p>
+      <!-- ▲▲ ここまで ▲▲ -->
+      <div class="greeting-box__name name">〔お名前・肩書き〕　一般社団法人ひなたスポーツクロス</div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ③ 大会概要
+       大会の基本情報です。日程・会場等が変わった場合はここを更新してください。
+  ============================================================= -->
+  <section id="overview">
+    <div class="section-head"><span class="section-num">02</span><h2>大会概要</h2></div>
+    <p class="lead">年代別・男女シングルス&ダブルス。参加資格や参加料など詳しい要項は、下記の大会要項ページをご覧ください。</p>
+    <div class="info-grid">
+      <div class="info-cell"><div class="k">大会名称</div><div class="v">第4回 南九州ベテランオープンテニス選手権</div></div>
+      <div class="info-cell"><div class="k">公認</div><div class="v">ベテランJOP対象大会 グレードF1</div></div>
+      <div class="info-cell"><div class="k">主催</div><div class="v">一般社団法人ひなたスポーツクロス</div></div>
+      <div class="info-cell"><div class="k">後援</div><div class="v">宮崎県テニス協会</div></div>
+      <div class="info-cell"><div class="k">協力</div><div class="v">都城市テニス協会</div></div>
+      <div class="info-cell"><div class="k">開催日程</div><div class="v">令和8年11月21日(土)〜23日(月・祝)</div></div>
+      <div class="info-cell"><div class="k">会場</div><div class="v">都城運動公園テニスコート(砂入り人工芝16面)</div></div>
+      <div class="info-cell"><div class="k">種目</div><div class="v">男女シングルス・ダブルス(30歳以上〜75歳以上、5歳刻み)</div></div>
+      <div class="info-cell"><div class="k">申込締切</div><div class="v tabular">令和8年10月16日(金)</div></div>
+    </div>
+    <div class="note"><b>詳しい参加資格・参加料・お申込みは</b>&nbsp;<a href="https://claude.ai/code/artifact/59a645d1-ac89-4bca-accb-897dceaf6959" target="_blank" rel="noopener">大会要項・申込フォームのページ</a>をご覧ください。</div>
+  </section>
+
+  <!-- ============================================================
+       ④ 見どころ
+       カードを増減する場合は highlight-card の &lt;div&gt; ブロックごと
+       コピー&貼り付け、または削除してください。
+  ============================================================= -->
+  <section id="highlights">
+    <div class="section-head"><span class="section-num">03</span><h2>大会の見どころ</h2></div>
+    <div class="highlight-grid">
+      <div class="highlight-card">
+        <div class="num">1</div>
+        <h3>〔見どころ①の見出し〕</h3>
+        <p>〔説明文をここに記入してください。例:九州各県から年代別に多くのベテラン選手が集う大会です。〕</p>
+      </div>
+      <div class="highlight-card">
+        <div class="num">2</div>
+        <h3>〔見どころ②の見出し〕</h3>
+        <p>〔説明文をここに記入してください。例:都城運動公園の充実したコート環境(砂入り人工芝16面)で開催します。〕</p>
+      </div>
+      <div class="highlight-card">
+        <div class="num">3</div>
+        <h3>〔見どころ③の見出し〕</h3>
+        <p>〔説明文をここに記入してください。過去大会の実績や参加者数などがあれば記入してください。〕</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ⑤ アクセス
+       地図を埋め込む場合は access-map を Google マップの
+       &lt;iframe&gt; に置き換えてください。
+  ============================================================= -->
+  <section id="access">
+    <div class="section-head"><span class="section-num">04</span><h2>アクセス</h2></div>
+    <div class="info-grid">
+      <div class="info-cell"><div class="k">会場</div><div class="v">都城運動公園テニスコート</div></div>
+      <div class="info-cell"><div class="k">住所</div><div class="v">〒885-0033 宮崎県都城市妻ケ丘町42街区</div></div>
+      <div class="info-cell"><div class="k">電話</div><div class="v">0986-23-7502</div></div>
+    </div>
+    <div class="access-map">
+      〔駐車場のご案内・最寄り駅からのアクセス・Googleマップの埋め込みなどをここに追加してください〕
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ⑥ 協賛
+       協賛企業を増やす場合は sponsor-chip を追加してください。
+  ============================================================= -->
+  <section id="sponsors">
+    <div class="section-head"><span class="section-num">05</span><h2>協賛</h2></div>
+    <div class="sponsor-row">
+      <div class="sponsor-chip">サンフローラル宮崎</div>
+    </div>
+    <div class="note">〔協賛企業のロゴ画像や、その他の協賛・協力企業があれば追記してください〕</div>
+  </section>
+
+  <!-- ============================================================
+       ⑦ お問い合わせ
+  ============================================================= -->
+  <section id="contact">
+    <div class="section-head"><span class="section-num">06</span><h2>お問い合わせ</h2></div>
+    <div class="contact-card">
+      <div class="row"><div class="k">主催</div><div>一般社団法人ひなたスポーツクロス</div></div>
+      <div class="row"><div class="k">メール</div><div><a href="mailto:info@hinacross.jp">info@hinacross.jp</a></div></div>
+      <div class="row"><div class="k">大会要項</div><div><a href="https://claude.ai/code/artifact/59a645d1-ac89-4bca-accb-897dceaf6959" target="_blank" rel="noopener">お申込みはこちらのページから</a></div></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="name">第4回 南九州ベテランオープンテニス選手権</div>
+    <div>主催:一般社団法人ひなたスポーツクロス</div>
+    <div class="credit">&copy; 2026 一般社団法人ひなたスポーツクロス</div>
+  </footer>
+</div>
+
+</body>
+</html>
+
