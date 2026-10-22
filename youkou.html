@@ -1,0 +1,486 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>第4回 南九州ベテランオープンテニス選手権 大会要項</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Barlow+Condensed:wght@500;600;700&display=swap">
+<style>
+  :root{
+    --paper:#F5F6EF;
+    --paper-raised:#FFFFFF;
+    --ink:#16211B;
+    --ink-soft:#4B564D;
+    --ink-faint:#7C8880;
+    --court:#1F5C45;
+    --court-deep:#123626;
+    --court-tint:#E7EFE6;
+    --ball:#C7D92C;
+    --ball-ink:#3A4300;
+    --line:#DBE1D3;
+    --clay:#AE4230;
+    --clay-tint:#F7E7E2;
+    --shadow: 0 1px 2px rgba(20,30,20,.06), 0 8px 24px rgba(20,30,20,.06);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#10160F;
+      --paper-raised:#181F16;
+      --ink:#ECEFE7;
+      --ink-soft:#AEB8A6;
+      --ink-faint:#7B8577;
+      --court:#57B78C;
+      --court-deep:#7FCBA5;
+      --court-tint:#1B2A20;
+      --ball:#D8E64A;
+      --ball-ink:#20260A;
+      --line:#2A342A;
+      --clay:#E08268;
+      --clay-tint:#2E1E17;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#10160F;
+    --paper-raised:#181F16;
+    --ink:#ECEFE7;
+    --ink-soft:#AEB8A6;
+    --ink-faint:#7B8577;
+    --court:#57B78C;
+    --court-deep:#7FCBA5;
+    --court-tint:#1B2A20;
+    --ball:#D8E64A;
+    --ball-ink:#20260A;
+    --line:#2A342A;
+    --clay:#E08268;
+    --clay-tint:#2E1E17;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  .page{max-width:840px;margin:0 auto;padding:0 20px 80px;}
+  h1,h2,h3{font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;text-wrap:balance;margin:0;}
+  a{color:var(--court-deep);}
+  .kicker{
+    font-family:"Barlow Condensed",sans-serif;
+    font-weight:600;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    font-size:12.5px;
+    color:var(--court-deep);
+  }
+  .tabular{font-variant-numeric:tabular-nums;}
+
+  /* ---------- masthead ---------- */
+  .masthead{
+    background:
+      linear-gradient(160deg, var(--court) 0%, var(--court-deep) 100%);
+    color:#F4F8F1;
+    padding:44px 20px 32px;
+    border-radius:0 0 22px 22px;
+  }
+  .masthead-inner{max-width:840px;margin:0 auto;}
+  .masthead .kicker{color:var(--ball);}
+  .masthead h1{
+    font-size:clamp(26px,6vw,38px);
+    font-weight:900;
+    margin-top:10px;
+    color:#fff;
+  }
+  .masthead .sub{
+    margin-top:8px;
+    font-size:15px;
+    color:#DCE9DF;
+  }
+  .badge-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:22px;
+  }
+  .badge{
+    font-size:12.5px;
+    padding:6px 12px;
+    border-radius:999px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.28);
+    color:#F4F8F1;
+  }
+  .badge b{color:var(--ball);font-weight:700;}
+  .key-facts{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:10px;
+    margin-top:24px;
+  }
+  .key-fact{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:12px;
+    padding:12px 14px;
+  }
+  .key-fact .label{font-size:11.5px;color:#BFD6C7;letter-spacing:.04em;}
+  .key-fact .value{font-size:15.5px;font-weight:700;margin-top:3px;color:#fff;}
+  .cta-row{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:"Zen Kaku Gothic New",sans-serif;
+    font-weight:700;
+    font-size:15px;
+    padding:13px 22px;
+    border-radius:11px;
+    border:1px solid transparent;
+    cursor:pointer;
+    text-decoration:none;
+    transition:transform .12s ease, filter .12s ease;
+  }
+  .btn:active{transform:translateY(1px);}
+  .btn-primary{background:var(--ball);color:var(--ball-ink);}
+  .btn-primary:hover{filter:brightness(1.05);}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5);}
+  .btn-ghost:hover{background:rgba(255,255,255,.1);}
+
+  /* ---------- nav pills ---------- */
+  .subnav{
+    position:sticky;top:0;z-index:20;
+    background:var(--paper);
+    padding:12px 0;
+    display:flex;gap:8px;overflow-x:auto;
+    border-bottom:1px solid var(--line);
+    margin:0 -20px 8px;
+    padding-left:20px;padding-right:20px;
+  }
+  .subnav::-webkit-scrollbar{display:none;}
+  .subnav a{
+    flex:0 0 auto;
+    font-size:13px;font-weight:500;
+    color:var(--ink-soft);
+    text-decoration:none;
+    padding:7px 13px;
+    border-radius:999px;
+    border:1px solid var(--line);
+    background:var(--paper-raised);
+    white-space:nowrap;
+  }
+  .subnav a.is-cta{color:var(--court-deep);border-color:var(--court);font-weight:700;}
+
+  /* ---------- sections ---------- */
+  section{padding:38px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .section-head{display:flex;align-items:baseline;gap:10px;margin-bottom:18px;}
+  .section-num{font-family:"Barlow Condensed",sans-serif;font-weight:700;color:var(--ink-faint);font-size:14px;}
+  section h2{font-size:21px;font-weight:700;}
+
+  .info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    border-radius:14px;
+    overflow:hidden;
+  }
+  .info-cell{background:var(--paper-raised);padding:16px 18px;}
+  .info-cell .k{font-size:12px;color:var(--ink-faint);letter-spacing:.03em;}
+  .info-cell .v{font-size:15px;margin-top:4px;font-weight:500;}
+
+  table{width:100%;border-collapse:collapse;font-size:14px;}
+  .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;}
+  th,td{padding:11px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap;}
+  thead th{background:var(--court-tint);color:var(--court-deep);font-weight:700;font-size:12.5px;letter-spacing:.02em;}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:nth-child(odd){background:color-mix(in srgb, var(--paper-raised) 100%, transparent);}
+
+  .cat-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:10px;
+  }
+  .cat-chip{
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:12px 14px;
+  }
+  .cat-chip .age{font-weight:700;font-size:15px;}
+  .cat-chip .cut{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+
+  .note{
+    display:flex;gap:10px;
+    background:var(--court-tint);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:12px 14px;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    margin-top:14px;
+  }
+  .note.warn{background:var(--clay-tint);color:var(--clay);border-color:transparent;}
+  .note b{color:var(--ink);}
+  .note.warn b{color:var(--clay);}
+
+  ul.plain{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;}
+  ul.plain li{padding-left:18px;position:relative;font-size:14.5px;color:var(--ink-soft);}
+  ul.plain li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--court);}
+  ul.plain b{color:var(--ink);}
+
+  .fee-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;}
+  .fee-card{background:var(--paper-raised);border:1px solid var(--line);border-radius:14px;padding:18px;}
+  .fee-card .t{font-size:13px;color:var(--ink-faint);}
+  .fee-card .p{font-family:"Barlow Condensed",sans-serif;font-size:30px;font-weight:700;color:var(--court-deep);margin-top:2px;}
+  .fee-card .p span{font-size:14px;font-weight:600;color:var(--ink-faint);}
+
+  /* ---------- form ---------- */
+  #form{scroll-margin-top:70px;}
+  .form-card{
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:22px;
+    box-shadow:var(--shadow);
+  }
+  .form-card + .form-card{margin-top:16px;}
+  .field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px;}
+  .field:last-child{margin-bottom:0;}
+  .field label{font-size:13px;font-weight:700;color:var(--ink);}
+  .field .hint{font-size:12px;color:var(--ink-faint);font-weight:400;}
+  .field input[type=text],
+  .field input[type=tel],
+  .field input[type=email],
+  .field input[type=date],
+  .field select,
+  .field textarea{
+    font:inherit;
+    font-size:15.5px;
+    padding:11px 12px;
+    border-radius:10px;
+    border:1px solid var(--line);
+    background:var(--paper);
+    color:var(--ink);
+    width:100%;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{
+    outline:2px solid var(--court);outline-offset:1px;
+  }
+  .field textarea{resize:vertical;min-height:70px;}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media (max-width:520px){.row2{grid-template-columns:1fr;}}
+  .radio-group{display:flex;gap:10px;flex-wrap:wrap;}
+  .radio-pill{
+    border:1px solid var(--line);border-radius:10px;padding:10px 14px;
+    font-size:14.5px;cursor:pointer;background:var(--paper);
+    display:flex;align-items:center;gap:8px;
+  }
+  .radio-pill input{accent-color:var(--court);}
+  .radio-pill.checked{border-color:var(--court);background:var(--court-tint);color:var(--court-deep);font-weight:700;}
+
+  .entry-card{
+    border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px;
+    background:var(--paper);position:relative;
+  }
+  .entry-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
+  .entry-title{font-weight:700;font-size:14px;color:var(--court-deep);font-family:"Barlow Condensed",sans-serif;letter-spacing:.03em;}
+  .entry-remove{
+    border:none;background:none;color:var(--clay);font-size:13px;cursor:pointer;font-weight:600;
+    padding:4px 6px;
+  }
+  .partner-box{
+    margin-top:12px;padding:14px;border-radius:12px;
+    background:var(--court-tint);border:1px dashed var(--line);
+  }
+  .partner-box .field label{color:var(--court-deep);}
+  .add-entry-btn{
+    width:100%;padding:13px;border-radius:12px;border:1.5px dashed var(--court);
+    background:transparent;color:var(--court-deep);font-weight:700;font-size:14.5px;cursor:pointer;
+  }
+  .add-entry-btn:hover{background:var(--court-tint);}
+
+  .summary-box{
+    background:var(--court-tint);border-radius:14px;padding:16px 18px;
+  }
+  .summary-line{display:flex;justify-content:space-between;font-size:14px;padding:5px 0;color:var(--ink-soft);}
+  .summary-line.total{border-top:1px solid var(--line);margin-top:6px;padding-top:10px;font-weight:700;color:var(--ink);font-size:16px;}
+  .summary-line .amt{font-family:"Barlow Condensed",sans-serif;font-weight:700;}
+
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--ink-soft);margin:18px 0;}
+  .consent input{margin-top:3px;accent-color:var(--court);}
+
+  .submit-btn{
+    width:100%;padding:16px;border-radius:12px;border:none;
+    background:var(--court);color:#fff;font-weight:700;font-size:16px;
+    font-family:"Zen Kaku Gothic New",sans-serif;cursor:pointer;
+  }
+  .submit-btn:disabled{background:var(--ink-faint);cursor:not-allowed;}
+  .submit-btn:not(:disabled):hover{background:var(--court-deep);}
+
+  .field-error{font-size:12.5px;color:var(--clay);display:none;margin-top:2px;}
+  .field.has-error input,.field.has-error select{border-color:var(--clay);}
+  .field.has-error .field-error{display:block;}
+
+  .status-banner{
+    display:none;padding:14px 16px;border-radius:12px;margin-bottom:16px;font-size:14px;
+  }
+  .status-banner.show{display:block;}
+  .status-banner.sending{background:var(--court-tint);color:var(--court-deep);}
+  .status-banner.done{background:var(--court-tint);color:var(--court-deep);}
+  .status-banner.blocked{background:var(--clay-tint);color:var(--clay);}
+
+  .done-screen{display:none;text-align:center;padding:20px 6px;}
+  .done-screen.show{display:block;}
+  .done-screen .mark{font-size:40px;}
+  .done-screen h3{margin-top:10px;font-size:19px;}
+  .done-screen p{color:var(--ink-soft);font-size:14px;margin-top:6px;}
+  .copy-btn{
+    margin-top:14px;font-size:13px;padding:9px 16px;border-radius:9px;
+    border:1px solid var(--line);background:var(--paper-raised);color:var(--ink);cursor:pointer;
+  }
+
+  footer{padding:34px 0 10px;font-size:12.5px;color:var(--ink-faint);}
+  footer .officers{margin-top:6px;}
+  .credit{margin-top:18px;font-size:11.5px;color:var(--ink-faint);}
+</style>
+
+<div class="masthead">
+  <div class="masthead-inner">
+    <div class="kicker">VJOP-F1 公認 &middot; 第4回</div>
+    <h1>南九州ベテランオープン<br>テニス選手権</h1>
+    <div class="sub">年代別シングルス・ダブルス &middot; 令和8年11月21日(土)〜23日(月・祝)</div>
+    <div class="badge-row">
+      <span class="badge">主催 <b>一般社団法人ひなたスポーツクロス</b></span>
+      <span class="badge">共催 都城市テニス協会</span>
+      <span class="badge">協賛 サンフローラル宮崎</span>
+      <span class="badge">後援 宮崎県テニス協会</span>
+    </div>
+    <div class="key-facts">
+      <div class="key-fact"><div class="label">会場</div><div class="value">ダンロップテニスコート</div></div>
+      <div class="key-fact"><div class="label">申込</div><div class="value tabular">受付終了</div></div>
+      <div class="key-fact"><div class="label">使用球</div><div class="value">ダンロップ フォートイエロー</div></div>
+    </div>
+    <div class="cta-row">
+      <span class="badge" style="font-size:14px;padding:9px 16px;"><b>参加申込の受付は終了しました</b></span>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <nav class="subnav">
+    <a href="#overview">大会概要</a>
+    <a href="#schedule">日程</a>
+    <a href="#categories">種目・参加資格</a>
+    <a href="#fees">参加料</a>
+    <a href="#guidelines">申込要領</a>
+  </nav>
+
+  <section id="overview">
+    <div class="section-head"><span class="section-num">01</span><h2>大会概要</h2></div>
+    <div class="info-grid">
+      <div class="info-cell"><div class="k">大会名称</div><div class="v">第4回 南九州ベテランオープンテニス選手権</div></div>
+      <div class="info-cell"><div class="k">公認</div><div class="v">ベテランJOP対象大会 グレードF1</div></div>
+      <div class="info-cell"><div class="k">主催</div><div class="v">一般社団法人ひなたスポーツクロス</div></div>
+      <div class="info-cell"><div class="k">共催</div><div class="v">都城市テニス協会</div></div>
+      <div class="info-cell"><div class="k">協賛</div><div class="v">サンフローラル宮崎</div></div>
+      <div class="info-cell"><div class="k">後援</div><div class="v">宮崎県テニス協会</div></div>
+      <div class="info-cell"><div class="k">会場</div><div class="v">ダンロップテニスコート(都城運動公園、砂入り人工芝16面)<br><span style="color:var(--ink-faint);font-size:13px;">〒885-0033 都城市妻ケ丘町42街区 TEL:0986-23-7502</span><br><span style="font-size:13px;"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%83%BD%E5%9F%8E%E9%81%8B%E5%8B%95%E5%85%AC%E5%9C%92%20%E3%83%86%E3%83%8B%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88" target="_blank" rel="noopener">Googleマップ</a> / <a href="https://www.city.miyakonojo.miyazaki.jp/site/miyakonojo-pr/3804.html" target="_blank" rel="noopener">都城市公式サイト(アクセス案内)</a></span></div></div>
+      <div class="info-cell"><div class="k">使用球</div><div class="v">ダンロップフォートイエロー(日本テニス協会公認球)</div></div>
+      <div class="info-cell"><div class="k">試合方法</div><div class="v">2タイブレークセット(6-6タイブレーク)、ファイナルセット10ポイント / マッチタイブレーク・ノーアドバンテージ方式<br><span style="color:var(--ink-faint);font-size:13px;">※申込状況により変更する場合があります</span></div></div>
+      <div class="info-cell"><div class="k">表彰</div><div class="v">優勝・準優勝者まで</div></div>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="section-head"><span class="section-num">02</span><h2>開催日程</h2></div>
+    <p style="font-size:14px;color:var(--ink-soft);margin:0 0 14px;">ドロー数(参加人数)により、以下のいずれかの日程で行う予定です(下表は<b>シングルス</b>の日程です)。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>ドロー数</th><th>11/21(土)</th><th>11/22(日)</th><th>11/23(月・祝)</th><th>昨年度実績</th></tr></thead>
+        <tbody>
+          <tr><td>3(リーグ戦)</td><td>リーグ1・2</td><td>リーグ3</td><td>予備</td><td>70M, 75M, 60W, 65W</td></tr>
+          <tr><td>4(4人組)</td><td>1回戦</td><td>決勝</td><td>予備</td><td>-</td></tr>
+          <tr><td>8(5〜8人組)</td><td>1・2回戦(準決勝)</td><td>決勝</td><td>予備</td><td>35M, 40W, 50W, 55W</td></tr>
+          <tr><td>16(9〜16人組)</td><td>1・2回戦</td><td>準決勝・決勝</td><td>予備</td><td>40M, 45M, 60M</td></tr>
+          <tr><td>32(17〜32人)</td><td>1・2回戦</td><td>準々〜準決勝</td><td>決勝</td><td>50M, 55M, 65M</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">昨年度状況のMは男子、Wは女子です(30MW・45W・70W・75Wは昨年度不成立でした)。</div>
+    <div class="note warn"><b>ダブルスは2日目(11/22)からの開催です。1日目(11/21)はダブルスの試合はありません。</b></div>
+  </section>
+
+  <section id="categories">
+    <div class="section-head"><span class="section-num">03</span><h2>種目・参加資格</h2></div>
+    <p style="font-size:14px;color:var(--ink-soft);margin:0 0 14px;">男女各シングルス・ダブルス、以下の年代で実施します(年齢参加資格は大会最終日<span class="tabular">2026/11/23</span>時点で判定)。</p>
+    <div class="cat-grid" id="catGrid"><!-- filled by JS --></div>
+    <div class="note">ドロー数に制限はありません(申込3以上で成立とします)。</div>
+  </section>
+
+  <section id="fees">
+    <div class="section-head"><span class="section-num">04</span><h2>参加資格・参加料</h2></div>
+    <ul class="plain" style="margin-bottom:18px;">
+      <li><b>参加資格:</b> ベテランJOP登録、または各都道府県テニス協会いずれか1つへの加盟が必要です。</li>
+      <li>いずれの団体にも所属していない方は、参加料に加えて<b>賛助会費1,000円</b>を納入すれば参加できます。</li>
+    </ul>
+    <div class="fee-cards">
+      <div class="fee-card"><div class="t">シングルス</div><div class="p">¥4,540<span>/ 種目</span></div></div>
+      <div class="fee-card"><div class="t">ダブルス</div><div class="p">¥5,540<span>/ お1人様</span></div></div>
+      <div class="fee-card"><div class="t">賛助会費</div><div class="p">¥1,000<span>/ 未加盟の方のみ</span></div></div>
+    </div>
+    <div class="note">参加料には、ワンコイン100円と本年度より導入のJPIN制度によるJPIN使用料(1エントリーあたり440円)が含まれています。参加料のお支払いは、申込締切後(不成立の可能性もあるため)にご連絡します。</div>
+  </section>
+
+  <section id="guidelines">
+    <div class="section-head"><span class="section-num">05</span><h2>申込要領(受付は終了しました)</h2></div>
+    <ul class="plain">
+      <li><b>申込受付:</b> 参加申込の受付は終了しました。たくさんのお申込みをありがとうございました。ご不明な点は事務局(<a href="mailto:info@hinacross.jp">info@hinacross.jp</a>)までお問い合わせください。</li>
+      <li><b>ベテランJOPランキング付与を希望される方は、JTA登録番号を必ずご記入ください。</b>記入がない場合はポイントを付与できません。</li>
+      <li><b>申込締切:</b> <span class="tabular">令和8年10月16日(金)</span></li>
+      <li><b>参加料の支払い:</b> 申込締切後にご連絡します(不成立の可能性もあるため)。</li>
+      <li><b>選考委員会:</b> 申込締切後、宮崎県テニス協会事務局にて実施予定(大会2週間前までに実施)。</li>
+      <li><b>選考結果:</b> 選考委員会後、宮崎県テニス協会ホームページにて掲載します。</li>
+    </ul>
+    <div class="note" style="margin-top:16px;">
+      本要項は天候等やむを得ない事情により変更されることがあります。この要項に定めない事項は、日本テニス協会規則に従いトーナメント委員会で決定します。服装は日本テニス協会諸規則に定めるテニスウェアーとします。JTA登録申請中の方は、申込締切までに登録料の支払いまで完了してください。
+    </div>
+  </section>
+
+  <footer>
+    <div>問い合わせ先:一般社団法人ひなたスポーツクロス メール <a href="mailto:info@hinacross.jp">info@hinacross.jp</a></div>
+    <div class="officers">役員:レフェリー 石井 智久 / ディレクター 村雲 未知夫</div>
+    <div style="margin-top:10px;">要項発表日:令和8年9月1日(火)</div>
+    <div style="margin-top:10px;"><a href="./">&larr; 大会トップページへ戻る</a></div>
+    <div class="credit">第4回 南九州ベテランオープンテニス選手権 &middot; 主催:一般社団法人ひなたスポーツクロス</div>
+  </footer>
+</div>
+
+
+<script>
+(function(){
+  var AGE_CATEGORIES = [
+    {label:'30歳以上', cutoff:'1996-12-31'},
+    {label:'35歳以上', cutoff:'1991-12-31'},
+    {label:'40歳以上', cutoff:'1986-12-31'},
+    {label:'45歳以上', cutoff:'1981-12-31'},
+    {label:'50歳以上', cutoff:'1976-12-31'},
+    {label:'55歳以上', cutoff:'1971-12-31'},
+    {label:'60歳以上', cutoff:'1966-12-31'},
+    {label:'65歳以上', cutoff:'1961-12-31'},
+    {label:'70歳以上', cutoff:'1956-12-31'},
+    {label:'75歳以上', cutoff:'1951-12-31'}
+  ];
+  function fmtCutoff(iso){ var d = iso.split('-'); return d[0]+'年'+d[1]+'月'+d[2]+'日'; }
+  var catGrid = document.getElementById('catGrid');
+  AGE_CATEGORIES.forEach(function(c){
+    var el = document.createElement('div');
+    el.className = 'cat-chip';
+    el.innerHTML = '<div class="age">'+c.label+'</div><div class="cut">'+fmtCutoff(c.cutoff)+'以前生まれ</div>';
+    catGrid.appendChild(el);
+  });
+})();
+</script>
+
+</body></html>
